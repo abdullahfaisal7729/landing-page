@@ -1,28 +1,13 @@
 import React from "react";
-import home from "./../home.jpg";
+import "./../styles/Header.css";
+import home from "./../assets/home.jpg";
 
 const Header = () => {
   return (
-    <section
-      id="#header"
-      className="ml-64"
-      style={{
-        color: "white",
-      }}
-    >
-      {/* Container */}
+    <section id="#header" className="ml-64 header-main-section">
       <div className="flex flex-row mt-10">
-        {/* left */}
         <div className="flex flex-col mb-32 space-y-5">
-          <p
-            className="max-w-md text-4xl font-bold"
-            style={{
-              fontSize: "48px",
-              fontFamily: "serif",
-              width: "400px",
-              lineHeight: "2.7rem",
-            }}
-          >
+          <p className="max-w-md text-4xl font-bold header-heading">
             Create stunning web experiences
           </p>
           <p className="max-w-sm text-darkGrayishBlue">
@@ -38,13 +23,8 @@ const Header = () => {
             </button>
           </div>
         </div>
-        {/* right */}
-        <div className="" style={{}}>
-          <img
-            src={home}
-            style={{ width: 450, height: 325 }}
-            alt="Error in image"
-          ></img>
+        <div>
+          <img src={home} className="header-image" alt="Error in image"></img>
         </div>
       </div>
     </section>

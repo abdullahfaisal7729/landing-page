@@ -7,11 +7,3 @@ body {
   height: 140vh;
   background: linear-gradient(175deg, #111d2d 50%, #ffffff 50%);
 }
-
-.main-icons {
-  height: "60vh";
-  align-items: "center";
-  justify-content: "center";
-  background-color: "white";
-  margin-top: "110px";
-}

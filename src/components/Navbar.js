@@ -1,27 +1,13 @@
 import React from "react";
-import logo from "./../logo-final.png";
+import logo from "./../assets/logo.png";
+import "./../styles/Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav
-      className="mx-auto ps-6 pt-4"
-      style={{
-        color: "#6d7685",
-      }}
-    >
+    <nav className="mx-auto ps-6 pt-4 navbar-main-section">
       <div className="flex flex-row-start items-center justify-between">
-        <div
-          className="flex space-x-10 ml-56"
-          style={{
-            fontSize: "14px",
-            color: "#3c4554",
-          }}
-        >
-          <img
-            src={logo}
-            style={{ width: 30, height: 30 }}
-            alt="Error in image"
-          ></img>
+        <div className="flex space-x-10 ml-56 navbar-img-section">
+          <img src={logo} className="navbar-image" alt="Error in image"></img>
           <a href="/" className="text-darkGrayishBlue hover:text-white">
             Pricing
           </a>
@@ -45,22 +31,8 @@ const Navbar = () => {
           <a href="/" className="hover:text-darkGrayishBlue">
             Sign in
           </a>
-          <a
-            href="/"
-            className="hover:text-darkGrayishBlue"
-            style={{
-              marginTop: "-4px",
-            }}
-          >
-            Request Demo{" "}
-            <span
-              style={{
-                fontSize: "20px",
-                color: "#2f3f69",
-              }}
-            >
-              &#8594;
-            </span>
+          <a href="/" className="hover:text-darkGrayishBlue resources">
+            Request Demo <span className="arrow">&#8594;</span>
           </a>
         </div>
       </div>

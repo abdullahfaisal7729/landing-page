@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.main-icons {
-  height: "60vh";
-  align-items: "center";
-  justify-content: "center";
-  background-color: "white";
-  margin-top: "110px";
+.page-icons {
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-top: 110px;
 }

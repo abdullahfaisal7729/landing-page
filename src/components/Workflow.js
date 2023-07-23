@@ -1,27 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./../styles/Workflow.css";
 
 const Workflow = (props) => {
   return (
-    <div
-      className="flex flex-col"
-      style={{
-        marginBottom: "50px",
-      }}
-    >
+    <div className="flex flex-col mb-12">
       <div>
-        <FontAwesomeIcon
-          icon={props.icon}
-          border
-          style={{
-            backgroundColor: "#2374ea",
-            color: "white",
-            fontSize: "25px",
-            borderRadius: "60px",
-            // boxShadow: "0 0 2px #888",
-            padding: "0.5em 0.5em",
-          }}
-        />
+        <FontAwesomeIcon icon={props.icon} border className="icon-style" />
       </div>
       <h1 className="text-2xl font-bold">Robust Workflow</h1>
       <p className="max-w-md text-xs ml-0">
