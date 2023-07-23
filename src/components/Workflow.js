@@ -8,7 +8,7 @@ const Workflow = (props) => {
       <div>
         <FontAwesomeIcon icon={props.icon} border className="icon-style" />
       </div>
-      <h1 className="text-2xl font-bold">Robust Workflow</h1>
+      <h1 className="text-2xl font-bold">{props.heading}</h1>
       <p className="max-w-md text-xs ml-0">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta
         minus molestiae vel beatae natus eveniet.

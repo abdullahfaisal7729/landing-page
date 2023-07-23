@@ -15,17 +15,57 @@ import RequestDemo from "./components/RequestDemo";
 import ImageSection from "./components/ImageSection";
 
 function App() {
+  const iconsData = [
+    {
+      icon: faStickyNote,
+      heading: "Robust Workflow",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dictaminus molestiae vel beatae natus eveniet.",
+    },
+    {
+      icon: faUserCircle,
+      heading: "Robust Workflow",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dictaminus molestiae vel beatae natus eveniet.",
+    },
+    {
+      icon: faThumbsUp,
+      heading: "Robust Workflow",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dictaminus molestiae vel beatae natus eveniet.",
+    },
+    {
+      icon: faHeart,
+      heading: "Robust Workflow",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dictaminus molestiae vel beatae natus eveniet.",
+    },
+    {
+      icon: faFile,
+      heading: "Robust Workflow",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dictaminus molestiae vel beatae natus eveniet.",
+    },
+    {
+      icon: faAddressBook,
+      heading: "Robust Workflow",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dictaminus molestiae vel beatae natus eveniet.",
+    },
+  ];
+
   return (
     <>
       <Navbar></Navbar>
       <Header></Header>
       <div className="grid grid-cols-3 justify-content mt-5 ml-60 mr-80 gap-5 page-icons">
-        <Workflow icon={faStickyNote} />
-        <Workflow icon={faUserCircle} />
-        <Workflow icon={faThumbsUp} />
-        <Workflow icon={faHeart} />
-        <Workflow icon={faFile} />
-        <Workflow icon={faAddressBook} />
+        {iconsData.map((index) => (
+          <Workflow
+            icon={index.icon}
+            heading={index.heading}
+            description={index.description}
+          ></Workflow>
+        ))}
       </div>
       <ImageSection></ImageSection>
       <RequestDemo />
